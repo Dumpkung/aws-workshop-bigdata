@@ -170,7 +170,9 @@ When finally created, you should see a text **One crawler successfully created"*
 
 2. Make sure you are using the **Asia Pacific (Singapore) ap-southeast-1** region.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f2452077-74bf-445b-912f-50f9e6c13445">
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f2452077-74bf-445b-912f-50f9e6c13445">
+</p>
 
 3. Click **Datasets** from the left menu and click **Connect new dataset**.
 
