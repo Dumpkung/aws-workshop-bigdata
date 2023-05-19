@@ -42,7 +42,7 @@ Suriya.mitrphol | nU7{vF6& | https://548746805562.signin.aws.amazon.com/console
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/6f63f23b-3e0c-49c1-a8bf-1cbc6b372b7b">
 
 
-3. Enter a unique name for the **Bucket name** (Follow this pattern "bigdata-firstname-bucket"). Select “Asia Pacific (Singapore) ap-southeast-1”  for Aws Region.
+3. Enter a unique name for the **Bucket name** (Follow this pattern **"bigdata-firstname-bucket"**). Select “Asia Pacific (Singapore) ap-southeast-1”  for Aws Region.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/b112b1d1-6c64-49a8-b25b-d127b41df5a1">
 
@@ -56,25 +56,37 @@ When finally created, you should see a text **successfully created bucket "yourb
 
 ### Add some data to your Aws S3 bucket
 
-4. Using this link https://drive.google.com/drive/folders/1kJTRMb60gHQmg78InAwgsSgwCeGukVY1?usp=share_link to obtain a data. (download file in this link to your computer)
+4. Click on **your bucket** and click **Create folder**
+
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7b410feb-70a2-4949-931e-c189a3e9be4d">
+
+Enter **data** for the **Folder name** and click **Create folder**.
+
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/25352163-a2dc-4e31-a1a2-663d05b6ed1e">
+
+Repeat this step and create another folder name **service output**. Once finish creating, you will see the result like this.
+
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/cdcfcb82-5756-4e2d-9254-f2f1e591e6f5">
+
+5. Using this link https://drive.google.com/drive/folders/1kJTRMb60gHQmg78InAwgsSgwCeGukVY1?usp=share_link to obtain a data. (download file in this link to your computer)
  
- <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0f8f1f18-dc38-4a5a-9fb8-abe29271c53b">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0f8f1f18-dc38-4a5a-9fb8-abe29271c53b">
 
-Click on your bucket and click **Upload**.
+Click on folder **data** and click **Upload**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/9c20c899-a7ab-44c9-87b7-4c416f2d8697">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/8c79ea98-79b9-4865-9321-2dd8dfd7dc6c">
 
 In upload page click **Add files** and Select file **sensor_data.parquet** from your local directory then click **Upload**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/a65511a2-c3c4-4d83-b882-7ff2f10e6b84">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/2c03dd7d-7f26-4fc7-9b09-ec5bd4c31337">
 
 When finally uploaded, you should see a text **Upload Succeeded** and your file will appear in the **File and folders** menu.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f77f1cf0-d963-405e-bd23-fde5b78ee62f">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f6581ec2-97f3-4fad-b7de-d1325c3815ca">
 
-And when you go back to your bucket you will see **sensor_data.parquet** in the Ojects menu.
+And when you go back to **your bucket/data** you will see **sensor_data.parquet** in the **Ojects** menu.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0fb653f6-5186-4bf4-a1ce-f2a3e36c3581">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0dd26af7-b61c-4e89-a6e1-dcecb59dc86c">
 
 ##
 
@@ -96,7 +108,7 @@ And when you go back to your bucket you will see **sensor_data.parquet** in the 
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7a884aa1-75d7-4315-b9b3-90a3cb01bcbf">
 
-4. Enter a unique name for the **Database name** (Follow this pattern "bigdata-firstname-glue-database") then click **Create Database**.
+4. Enter a unique name for the **Database name** (Follow this pattern **"bigdata-firstname-glue-database"**) then click **Create Database**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/d16809e5-0a24-4def-ac4c-09772f426f1d">
 
@@ -110,7 +122,7 @@ When finally created, your database will appear in the **Databases** menu.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/09951e98-bf87-4b85-a527-a05b44ef6811">
 
-6. On **Set crawler properties** page, provide a name for the new crawler (Follow this pattern "bigdata-firstname-crawler") then click **Next**.
+6. On **Set crawler properties** page, provide a name for the new crawler (Follow this pattern **"bigdata-firstname-crawler"**) then click **Next**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f2c86702-fd7b-4b35-b72c-3cd74f7530ba">
 
@@ -118,29 +130,29 @@ When finally created, your database will appear in the **Databases** menu.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/fe4454cb-4c11-4a0a-afce-e118b0ff15bb">
 
-Select **S3** for **Data source** and in **S3 path** browse to **s3://${your bucket}** then click **Add an S3 data source**.
+Select **S3** for **Data source** and in **S3 path** browse to **s3://${your bucket}/data** then click **Add an S3 data source**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/99c13e89-4517-450c-8b68-910f1fa01fa2">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/4417d35e-76c9-43b4-8f03-5c1d89b9588a">
 
 You will be back on **Choose data sources and classifiers page** again and you will see your data source appear in **Data sources menu**. Make sure your data source is selected and then click **Next**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e2461778-5bf1-4b9b-b41c-690415b71169">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7374666b-c6d8-41cf-9e8d-a9e1dda11b3b">
 
 8. On **Configure security settings** page, in **IAM role** click Choose an existing IAM role and pick the role **AWSGlueServiceRole-default**, then click Next.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/440c14ad-fff3-4840-a623-3c6e217fefdb">
 
-9. On **Set output and scheduling** page, under Output configuration section, choose **your glue database** from the **Target database** dropdown list. Under Crawler schedule keep **On demand** frequency, click **Next**.
+9. On **Set output and scheduling** page, under **Output configuration** section, choose **your glue database** from the **Target database** dropdown list and enter a unique name for the **Table name prefix** (Follow this pattern "**firstname-sensor**"). Under **Crawler schedule** keep **On demand** frequency, click **Next**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/56584240-a700-4db7-b7b7-ecd48e515ef6">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/5f18fede-9aa1-4f8e-a42f-988d01c2baa3">
 
 10. Review all the parameters and click **Create crawler**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f82855d8-025b-4b57-905b-68536a84a0fc">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/ae4c6f48-ae5c-4635-bd03-68d23976bfba">
 
 When finally created, you should see a text **One crawler successfully created"**
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/c6fc5978-9254-42b8-ae24-2360c03dd870">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/8d3c0a4f-8073-498e-8d60-e1ea04c2046e">
 
 ### Run Aws Glue Crawler
 
@@ -148,13 +160,13 @@ When finally created, you should see a text **One crawler successfully created"*
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/5379afb7-bb79-4fda-b5ce-93d45deaf118">
 
-12. Once the crawler finish running, you can see the results by clicking **Tables** on the left of the page. You should see 1 new tables that were created by the crawlers - **bigdata_firstname_bucket** (The number of table depends on all file and folder in **your aws s3 bucket**, now you have only 1 file : **sensor_data.parquet**).
+12. Once the crawler finish running, you can see the results by clicking **Tables** on the left of the page. You should see 1 new tables that were created by the crawlers - **firstname-sensordata** (The number of table depends on all file and folder in **your aws s3 bucket/data**, now you have only 1 file : **sensor_data.parquet**).
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/08846d88-67f4-41f0-ab01-2fae98361555">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/a83cc9e3-c5db-4606-8745-99f08bafb7a4">
 
-13. Click on table **bigdata_firstname_bucket** and you will see the table schema automatically generated by the crawler based on the file **sensor_data.parquet**.
+13. Click on table **data** and you will see the table schema automatically generated by the crawler based on the file **sensor_data.parquet**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/b7e02335-f0fc-4d1f-87ec-b207c38f1513">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/b2a66597-faf9-49af-a584-d5264db60c1f">
 
 ##
 
@@ -178,17 +190,17 @@ When finally created, you should see a text **One crawler successfully created"*
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/26b1b514-6852-4ff2-830d-86aa18929c50">
 
-4. Enter a unique name for the **Dataset name** (Follow this pattern "bigdata-firstname-dataset")
+4. Enter a unique name for the **Dataset name** (Follow this pattern **"bigdata-firstname-dataset"**)
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0bfb2656-c123-4bb6-878a-0e2cc3b45f7c">
 
 In **Connect to new dataset menu** select **Data Catalog S3 tables** and select **your glue database** then click on **your glue table**. After finish selecting dataset, click **Create dataset**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7adff0f4-79dc-44e2-871b-234787891742">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/33361733-12e1-40f4-898a-4f1a4fc9e089">
 
 When finally created, your dataset will appear in the **Datasets** menu.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/b17a0c64-e4b7-451a-902d-247dbc4bb76b">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/541f2061-20f5-4ec1-bdb8-1b0a68a3674b">
 
 ### View data profiling and data quality
 
@@ -196,7 +208,7 @@ When finally created, your dataset will appear in the **Datasets** menu.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/649502af-e8c0-4af7-969f-bb9ae607ffb0">
 
-6. Enter a unique name for the **Job name** (Follow this pattern "bigdata-firstname-profile job") and select **Full dataset**.
+6. Enter a unique name for the **Job name** (Follow this pattern **"bigdata-firstname-profile job"**) and select **Full dataset**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e44cc58a-14e5-43f0-b38e-ce0e694a4ba6">
 
@@ -226,4 +238,17 @@ Select the **Columns statistics** tab and view data quality.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7e1448cd-9f17-44eb-bac6-f609fa0a9f06">
 
+8. Enter a unique name for the **Project name** (Follow this pattern "bigdata-firstname-project").
+
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/ba1c4b77-9a9e-4ebd-a882-79b63b317995">
+
+Select **My datasets** and select **your dataset** you created in the previous lab module.
+
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/1fadd8cf-6f47-4541-82d0-ee9087f168ba">
+
+In **Permission** click Choose an existing IAM role and pick the role **AWSGlueDataBrewServiceRole-default**, then click **Create project**. It will take a minute or two for project to finish.
+
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/50076ae8-37d2-431b-aad7-e38d7f4509aa">
+
+Once project finish creating, This will take you to **Data profile overview** tab of **your dataset**.
 
