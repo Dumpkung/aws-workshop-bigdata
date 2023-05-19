@@ -206,15 +206,15 @@ When finally created, your dataset will appear in the **Datasets** menu.
 
 5. Once we have created the dataset, click the check box next to **your dataset** and click **Run data profile** at the top of the page then click **Create profile job**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/649502af-e8c0-4af7-969f-bb9ae607ffb0">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f0a0a8dc-7982-4ae7-a840-6646d30c22a7">
 
 6. Enter a unique name for the **Job name** (Follow this pattern **"bigdata-firstname-profile job"**) and select **Full dataset**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e44cc58a-14e5-43f0-b38e-ce0e694a4ba6">
 
-In job output settings browse to **s3://${your bucket}**.
+In job output settings browse to **s3://${your bucket}/service output**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/d2e055ee-f70c-44f5-af0e-fd20a64eb410">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/c9b5f50f-b6b0-400d-8b50-170e136d501b">
 
 Expand Data profile configurations, and select Enable PII statistics to identify PII columns when running the data profile job. Under PII categories, select All categories.
 
@@ -226,11 +226,11 @@ In **Permission** click Choose an existing IAM role and pick the role **AWSGlueD
 
 Once the profile job finish running, This will take you to **Data profile overview** tab of **your dataset**.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/28a11467-5c8e-47d3-b33b-c9e3edbdb27a">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f982f4d0-ff82-47a8-9562-0dd43410ce0c">
 
 Select the **Columns statistics** tab and view data quality.
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7b5d0e4b-90ab-45a8-95d4-45f00e102a4e">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/27ae508f-b1f4-46ea-880b-99fd225604cd">
 
 ### Standard Transform
 
@@ -250,5 +250,28 @@ In **Permission** click Choose an existing IAM role and pick the role **AWSGlueD
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/50076ae8-37d2-431b-aad7-e38d7f4509aa">
 
-Once project finish creating, This will take you to **Data profile overview** tab of **your dataset**.
+Once project finish creating, This will take you to **Your Project Workspace**.
+
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f09dc571-6df6-4391-a38d-3f6e2d9b809f">
+
+9. Once we have created the project, next step we will transform some data in **your project workspace** by following these steps.
+* Click **SPLIT** from the top menu and select **On a single delimiter**. You will see the setting tab at the right of your project workspace.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/835fb7d3-f287-4eb3-93ec-c6681e5e1d6d">
+</p>
+
+In the setting tab,
+- Select **event_time** for **Source column**.
+- Select **Enter custom value** then enter **T** for **Delimiter**.
+- Enter **1** for **Number of times to split**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/df760ac2-903f-4795-93e4-e9b76f713881">
+</p>
+
+Click on **Preview changes** and verify that the preview gives the expected result then select **Apply**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/d84c4bad-f445-4b4a-bc78-17545dd1714c">
+</p>
+
+* Click on column **event_time2**
 
