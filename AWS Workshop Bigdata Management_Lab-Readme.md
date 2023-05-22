@@ -1,6 +1,6 @@
 # AWS Workshop Bigdata Management
 ## Before starting this lab
-1. Using this table to obtain an user and password for access Aws console.
+1. Using **google drive link** in **microsoft teams chat** to obtain an user and password for access Aws console.
 
 
 2. Login to Aws console. (Open link from **"Console sign-in URL"**)
