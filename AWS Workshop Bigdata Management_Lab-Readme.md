@@ -2,18 +2,6 @@
 ## Before starting this lab
 1. Using this table to obtain an user and password for access Aws console.
 
-User name | Password | Console sign-in URL
------ | ----- | ----- |
-Chanagunc.mitrphol | 5+gNE1_J | https://548746805562.signin.aws.amazon.com/console
-chinnachotc.mitrphol | sNE'R42+ | https://548746805562.signin.aws.amazon.com/console
-Krisanat.mitrphol | #nXE6n}[ | https://548746805562.signin.aws.amazon.com/console
-Nawaratp.mitrphol | =QOnE95_ | https://548746805562.signin.aws.amazon.com/console
-Nuttapons.mitrphol | I1pC7*1Y | https://548746805562.signin.aws.amazon.com/console
-Phuvanat.mitrphol | (uH4{O%' | https://548746805562.signin.aws.amazon.com/console
-Pitchayac.mitrphol | 7fE5ET2_ | https://548746805562.signin.aws.amazon.com/console
-sarotc.mitrphol | ehT2a7%] | https://548746805562.signin.aws.amazon.com/console
-Sitthapongk.mitrphol | 9adGt31\| | https://548746805562.signin.aws.amazon.com/console
-Suriya.mitrphol | nU7{vF6& | https://548746805562.signin.aws.amazon.com/console
 
 2. Login to Aws console. (Open link from **"Console sign-in URL"**)
 
