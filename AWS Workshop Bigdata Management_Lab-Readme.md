@@ -425,7 +425,7 @@ In the **setting tab**, enter **detection time** for **New column name** then cl
 
 8. You will see the preview of your data in **your glue table**.
 <p align="center">
-  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/13d90ba0-e9bf-4504-8b07-cb620bc7f535">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/4cd18c1b-a391-47ae-9c92-c16fbe40ffb6">
 </p>
 
 9. Click icon ![image](https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e7165c93-7367-48c0-9762-7810908e1540) to add new query tab.
@@ -447,7 +447,9 @@ WHERE "status" = 'OK';
 <p align="center">
   <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0b664e93-5024-45ba-b5ec-619041f9283c">
 </p>
+
 ##
+
 # Congrats! Now you already done AWS Workshop Bigdata Management.
 
 
