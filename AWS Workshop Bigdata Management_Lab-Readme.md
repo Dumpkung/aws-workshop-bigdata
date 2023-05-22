@@ -433,7 +433,7 @@ In the **setting tab**, enter **detection time** for **New column name** then cl
   <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7deab762-39cf-4907-8030-c15656332fbf">
 </p>
 
-10. In the Query 3 tab, copy this code and paste in **code editor** then click **Run**.
+10. In the **Query 3** tab, copy this code and paste in **code editor** then click **Run**.
 ```sql
 SELECT * 
 FROM "bigdata-parin-glue-database"."parin-sensordata" 
@@ -450,7 +450,10 @@ WHERE "status" = 'OK';
 
 ##
 
-# Congrats! Now you already done AWS Workshop Bigdata Management.
+<p align="center">
+  ## Congrats! Now you already done AWS Workshop Bigdata Management.
+</p>
+
 
 
 
