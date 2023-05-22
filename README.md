@@ -1,4 +1,4 @@
-# AWS Workshop Bigdata
+# AWS Workshop Bigdata Management
 ## Before starting this lab
 1. Using this table to obtain an user and password for access Aws console.
 
@@ -32,7 +32,7 @@ Suriya.mitrphol | nU7{vF6& | https://548746805562.signin.aws.amazon.com/console
 ### LAB Part 1 : Manage your data lake storage with Aws S3
 ##
 ### Create Aws S3 bucket
-1. Using the AWS Console, navigate to the Aws S3 Storage. In the search bar, search for **AWS S3** and click on it.
+1. Using the AWS Console, navigate to the **Aws S3 Storage**. In the search bar, search for **AWS S3** and click on it.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/b76bc75d-7b54-4a52-94d7-2ad31b30f7be">
 
@@ -96,7 +96,7 @@ And when you go back to **your bucket/data** you will see **sensor_data.parquet*
 ##
 ### Create Aws Glue database in Glue data catalog
 
-1. Using the AWS Console, navigate to the Aws Glue. In the search bar, search for **AWS Glue** and click on it.
+1. Using the AWS Console, navigate to the **Aws Glue**. In the search bar, search for **AWS Glue** and click on it.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/935de13d-8968-48dd-b02f-8c2a393741e2">
 
@@ -176,7 +176,7 @@ When finally created, you should see a text **One crawler successfully created"*
 ##
 ### Create Aws GlueDatabrew Dataset
 
-1. Using the AWS Console, navigate to the Aws GlueDatabrew. In the search bar, search for **AWS GlueDatabrew** and click on it.
+1. Using the AWS Console, navigate to the **Aws GlueDatabrew**. In the search bar, search for **AWS GlueDatabrew** and click on it.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/d3d75466-b6b0-43d9-b39e-d924bc1c8957">
 
@@ -212,7 +212,7 @@ When finally created, your dataset will appear in the **Datasets** menu.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e44cc58a-14e5-43f0-b38e-ce0e694a4ba6">
 
-In job output settings browse to **s3://${your bucket}/service output**.
+In **job output settings** browse to **s3://${your bucket}/service output**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/c9b5f50f-b6b0-400d-8b50-170e136d501b">
 
@@ -255,12 +255,12 @@ Once project finish creating, This will take you to **Your Project Workspace**.
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f09dc571-6df6-4391-a38d-3f6e2d9b809f">
 
 9. Once we have created the project, next step we will transform some data in **your project workspace** by following these steps.
-* Click **SPLIT** from the top menu and select **On a single delimiter**. You will see the setting tab at the right of your project workspace.
+* Click **SPLIT** from the top menu and select **On a single delimiter**. You will see the **setting tab** at the right of your project workspace.
 <p align="center">
   <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/835fb7d3-f287-4eb3-93ec-c6681e5e1d6d">
 </p>
 
-In the setting tab,
+In the **setting tab**,
 - Select **event_time** for **Source column**.
 - Select **Enter custom value** then enter **T** for **Delimiter**.
 - Enter **1** for **Number of times to split**.
@@ -273,5 +273,183 @@ Click on **Preview changes** and verify that the preview gives the expected resu
   <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/d84c4bad-f445-4b4a-bc78-17545dd1714c">
 </p>
 
-* Click on column **event_time2**
+* Click the ellipsis (**…**) that appear above the column **event_time_2** and select **Delete**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/15d10d43-84b6-4f35-9479-429c6ad1829b">
+</p>
+
+In the **setting tab**, click **Apply**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/4e131fe2-3027-4adb-870b-7a1e96ac9b08">
+</p>
+
+* Click the ellipsis (**…**) above the column **event_time_1** and select **Format** -> **Date-time formats** -> **dd/mm/yyyy**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/b963c40b-f77b-41cb-a09c-ce3c111b7caf">
+</p>
+
+In the **setting tab**, click **Apply**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/367525a6-0ac6-4b11-bb0a-b6761c6d073a">
+</p>
+
+* Click the ellipsis (**…**) above the column **event_time_1** and select **Rename**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/4bc8d870-1049-471e-9254-499c68f84d26">
+</p>
+
+
+In the **setting tab**, enter **detection time** for **New column name** then click **Apply**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/46740867-9986-432c-93cb-87a03bf9a03c">
+</p>
+
+10. Once we have done transform the data, next step we will create the **recipe** of all data transformation steps in **your project workspace** by following these steps. 
+
+> **What is a recipe**
+> 
+> A collection of data transformation steps is called a recipe. They are created or edited in an DataBrew project and can be published as a stand-alone entity. <br />
+> A published recipe is a template of just the transformations steps without context of the data. Users can publish multiple versions of a recipe from a project as they work on it. A recipe can be downloaded or applied to any other dataset in a project through a recipe job.
+
+* open your recipe by clicking **RECIPE** on most right of the top menu and verify that your recipe contains 4 steps that look like the ones below.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/c54c6f47-e38d-4a64-8f75-4822277155ff">
+</p>
+
+* In the **Recipe tab**, click **Publish**
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/a6126bc9-d5d7-47d3-8ae0-80f8b4e0d7a2">
+</p>
+
+* When finally created, click **RECIPES** view from left navigation , choose **All recipes** or **Published** from the filter option and select **your recipe** to validate the steps.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/193138c7-f1bb-4d57-a076-1efc50652b63">
+</p>
+
+11. Once we have created the recipe, next step we will create the **recipe job** for **your project workspace** by following these steps.
+
+> **What is a recipe job**
+> 
+> DataBrew takes on the job of transforming your data by running the instructions that you set up when you made a recipe. The process of running these instructions is called a job. A job can put your data recipes into action according to a preset schedule. But you aren’t confined to a schedule. You can also run jobs on demand. If you want to profile some data, you don’t need a recipe. In that case, you can just set up a profile job to create a data profile.
+
+* Click **PROJECTS** view from left navigation and open **your project**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/94962530-1179-4ff4-9731-abd99c33df42">
+</p>
+
+* In **your project workspace**, click **Create job**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/2c577cf4-0dc1-40fc-bb6e-71be49c48556">
+</p>
+
+* Enter a unique name for the **Job name** (Follow this pattern **"bigdata-firstname-recipe job"**) and select **Full dataset**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e87a51c5-4694-4066-8f04-328a88ce1b44">
+</p>
+
+* In **job output settings**,
+- Select **Data Catalog S3 tables** for **Output to**.
+- Select **your glue database** for **Database name**.
+- Select **your glue table** for **Table name**.
+- Select **Use default source location** for **Table name prefix**.
+
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/05ab971a-3b91-4c7c-87c5-5049acf873d3">
+</p>
+
+* In **Permission** click Choose an existing IAM role and pick the role **AWSGlueDataBrewServiceRole-default**, then click **Create and run job**. It will take a minute or two for the recipe job to finish.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/2ca15395-bc27-451c-97b5-71521ad39886">
+</p>
+
+* You can monitor running process in the **JOBS** view to which you can navigate via left navigation. Once the recipe job finish running, the status will change from **Running** to **Succeeded**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/4920bb25-f8c7-4e43-8072-e0fcdefbe6bd">
+</p>
+
+* Select **your recipe job**, click **1 output** in **Job output tab** will show the location of the output file then click on **destination link**. This will take you to **AWS Glue table** console.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/5e413a5c-53cb-4b6b-a039-5730a6386910">
+</p>
+
+
+* Click on **your glue table**. In **Schema** tab, You should see that the data has changed from **event_time** to **detection time**.
+![image](https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e6a16a77-52c2-4d68-ab17-26eef920804d)
+
+##
+
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/3ba5cdb6-d1be-47c3-b33b-309011d1ce3c">
+
+### LAB Part 4 : Querying Data Using AWS Athena
+##
+### Launch query editor and connect to the data
+
+1. Using the AWS Console, navigate to the **Aws Athena**. In the search bar, search for **AWS Athena** and click on it.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/13d05f2a-26cc-42f7-9bcb-2c0270c596b8">
+</p>
+
+2. Make sure you are using the **Asia Pacific (Singapore) ap-southeast-1** region.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f2452077-74bf-445b-912f-50f9e6c13445">
+</p>
+
+3. In **Get started** menu, select **Query your data** then click **Launch query editor**.
+
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0225bb36-367f-4802-848b-3c1d4ab98246">
+</p>
+
+4. This will take you to **Query editor console** and you will see the text **"Before you run your first query, you need to set up a query result location in Amazon S3."**. Click **Edit settings**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/de92f356-8d6f-4769-a3a7-11c06db9fd03">
+</p>
+
+5. In **Query result location and encryption** browse to **s3://${your bucket}/service output** then click **Save**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/fd09df75-58f9-4273-9c5f-1e4a73ccf67c">
+</p>
+
+6. You should see a text **Settings successfully updated.**. Click **Editor** to go back to **Query editior console**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f483875a-4343-46c1-a180-8426f204fd85">
+</p>
+
+7. In the **Data** setting tab,
+- Select **AwsDataCatalog** for **Data source**.
+- Select **your glue database** for **Database**.
+- Click icon ![image](https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/eb939f0b-63ec-4621-a05c-1fb1baf9c23c) on **your glue table** then select **Preview Table**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e57f608b-7670-4dd2-bd4c-7fb76524e23b">
+</p>
+
+8. You will see the preview of your data in **your glue table**.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/13d90ba0-e9bf-4504-8b07-cb620bc7f535">
+</p>
+
+9. Click icon ![image](https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e7165c93-7367-48c0-9762-7810908e1540) to add new query tab.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7deab762-39cf-4907-8030-c15656332fbf">
+</p>
+
+10. In the Query 3 tab, copy this code and paste in **code editor** then click **Run**.
+```sql
+SELECT * 
+FROM "bigdata-parin-glue-database"."parin-sensordata" 
+WHERE "status" = 'OK';
+```
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/14314af4-e406-4a9d-826c-ffd0004fc3f4">
+</p>
+
+11. View the query results.
+<p align="center">
+  <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0b664e93-5024-45ba-b5ec-619041f9283c">
+</p>
+##
+# Congrats! Now you already done AWS Workshop Bigdata Management.
+
+
+
 
