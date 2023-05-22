@@ -450,10 +450,9 @@ WHERE "status" = 'OK';
 
 ##
 
-<p align="center">
-  ## Congrats! Now you already done AWS Workshop Bigdata Management.
-</p>
+<h2 align="center">Congrats! Now you already done AWS Workshop Bigdata Management.</h2>
 
+##
 
 
 
