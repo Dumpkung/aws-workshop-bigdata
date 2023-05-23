@@ -30,7 +30,7 @@
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/6f63f23b-3e0c-49c1-a8bf-1cbc6b372b7b">
 
 
-3. Enter a unique name for the **Bucket name** (Follow this pattern **"bigdata-firstname-bucket"**). Select “Asia Pacific (Singapore) ap-southeast-1”  for Aws Region.
+3. Enter a unique name for the **Bucket name** (Follow this pattern **"bigdata-[firstname]-bucket"**). Select “Asia Pacific (Singapore) ap-southeast-1”  for Aws Region.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/b112b1d1-6c64-49a8-b25b-d127b41df5a1">
 
@@ -97,7 +97,7 @@ And when you go back to **your bucket/data** you will see **sensor_data.parquet*
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7a884aa1-75d7-4315-b9b3-90a3cb01bcbf">
 
-4. Enter a unique name for the **Database name** (Follow this pattern **"bigdata-firstname-glue-database"**) then click **Create Database**.
+4. Enter a unique name for the **Database name** (Follow this pattern **"bigdata-[firstname]-glue-database"**) then click **Create Database**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/d16809e5-0a24-4def-ac4c-09772f426f1d">
 
@@ -111,7 +111,7 @@ When finally created, your database will appear in the **Databases** menu.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/09951e98-bf87-4b85-a527-a05b44ef6811">
 
-6. On **Set crawler properties** page, provide a name for the new crawler (Follow this pattern **"bigdata-firstname-crawler"**) then click **Next**.
+6. On **Set crawler properties** page, provide a name for the new crawler (Follow this pattern **"bigdata-[firstname]-crawler"**) then click **Next**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f2c86702-fd7b-4b35-b72c-3cd74f7530ba">
 
@@ -131,7 +131,7 @@ You will be back on **Choose data sources and classifiers page** again and you w
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/440c14ad-fff3-4840-a623-3c6e217fefdb">
 
-9. On **Set output and scheduling** page, under **Output configuration** section, choose **your glue database** from the **Target database** dropdown list and enter a unique name for the **Table name prefix** (Follow this pattern "**firstname-sensor**"). Under **Crawler schedule** keep **On demand** frequency, click **Next**.
+9. On **Set output and scheduling** page, under **Output configuration** section, choose **your glue database** from the **Target database** dropdown list and enter a unique name for the **Table name prefix** (Follow this pattern "**[firstname]-sensor**"). Under **Crawler schedule** keep **On demand** frequency, click **Next**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/5f18fede-9aa1-4f8e-a42f-988d01c2baa3">
 
@@ -149,7 +149,7 @@ When finally created, you should see a text **One crawler successfully created"*
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/5379afb7-bb79-4fda-b5ce-93d45deaf118">
 
-12. Once the crawler finish running, you can see the results by clicking **Tables** on the left of the page. You should see 1 new tables that were created by the crawlers - **firstname-sensordata** (The number of table depends on all file and folder in **your aws s3 bucket/data**, now you have only 1 file : **sensor_data.parquet**).
+12. Once the crawler finish running, you can see the results by clicking **Tables** on the left of the page. You should see 1 new tables that were created by the crawlers - **[firstname]-sensordata** (The number of table depends on all file and folder in **your aws s3 bucket/data**, now you have only 1 file : **sensor_data.parquet**).
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/a83cc9e3-c5db-4606-8745-99f08bafb7a4">
 
@@ -180,7 +180,7 @@ When finally created, you should see a text **One crawler successfully created"*
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/26b1b514-6852-4ff2-830d-86aa18929c50">
 
-4. Enter a unique name for the **Dataset name** (Follow this pattern **"bigdata-firstname-dataset"**)
+4. Enter a unique name for the **Dataset name** (Follow this pattern **"bigdata-[firstname]-dataset"**)
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/0bfb2656-c123-4bb6-878a-0e2cc3b45f7c">
 
@@ -198,7 +198,7 @@ When finally created, your dataset will appear in the **Datasets** menu.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/f0a0a8dc-7982-4ae7-a840-6646d30c22a7">
 
-6. Enter a unique name for the **Job name** (Follow this pattern **"bigdata-firstname-profile job"**) and select **Full dataset**.
+6. Enter a unique name for the **Job name** (Follow this pattern **"bigdata-[firstname]-profile job"**) and select **Full dataset**.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e44cc58a-14e5-43f0-b38e-ce0e694a4ba6">
 
@@ -228,7 +228,7 @@ Select the **Columns statistics** tab and view data quality.
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/7e1448cd-9f17-44eb-bac6-f609fa0a9f06">
 
-8. Enter a unique name for the **Project name** (Follow this pattern "bigdata-firstname-project").
+8. Enter a unique name for the **Project name** (Follow this pattern **"bigdata-[firstname]-project"**).
 
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/ba1c4b77-9a9e-4ebd-a882-79b63b317995">
 
@@ -332,7 +332,7 @@ In the **setting tab**, enter **detection time** for **New column name** then cl
   <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/2c577cf4-0dc1-40fc-bb6e-71be49c48556">
 </p>
 
-* Enter a unique name for the **Job name** (Follow this pattern **"bigdata-firstname-recipe job"**) and select **Full dataset**.
+* Enter a unique name for the **Job name** (Follow this pattern **"bigdata-[firstname]-recipe job"**) and select **Full dataset**.
 <p align="center">
   <img src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/e87a51c5-4694-4066-8f04-328a88ce1b44">
 </p>
