@@ -162,7 +162,7 @@ When finally created, you should see a text **One crawler successfully created"*
 <img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/6dd60eb8-23ef-4e57-b568-81a73fdb181b">
 
 
-### LAB Part 3: Working with Aws GlueDatabrew for Data Profile, Quality, Transform
+### LAB Part 3: Working with Aws GlueDatabrew for Data Profiling, Quality, Transformation
 ##
 ### Create Aws GlueDatabrew Dataset
 
