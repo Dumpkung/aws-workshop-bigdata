@@ -14,7 +14,7 @@
 
 ## Getting started
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/a733946f-37ad-4033-8b67-527b3e83850a">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/433627ad-52d9-4f3c-aad1-347550891133">
 
 
 ### LAB Part 1 : Manage your data lake storage with Aws S3
@@ -78,7 +78,8 @@ And when you go back to **your bucket/data** you will see **sensor_data.parquet*
 
 ##
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/5e69f00a-fdf1-4e19-b7b5-1b4b7f82f75a">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/bb978526-6025-4c22-a1c7-e0d585e133c9">
+
 
 ### LAB Part 2 : Working with Aws Glue for Data Movement, Ingestion
 ##
@@ -158,7 +159,8 @@ When finally created, you should see a text **One crawler successfully created"*
 
 ##
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/fcf9f9f8-e38c-4e71-b106-c8225250d840">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/6dd60eb8-23ef-4e57-b568-81a73fdb181b">
+
 
 ### LAB Part 3: Working with Aws GlueDatabrew for Data Profile, Quality, Transform
 ##
@@ -366,7 +368,8 @@ In the **setting tab**, enter **detection time** for **New column name** then cl
 
 ##
 
-<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/3ba5cdb6-d1be-47c3-b33b-309011d1ce3c">
+<img align="center" src="https://github.com/Dumpkung/aws-workshop-bigdata/assets/31465515/c94c990f-50e4-4c84-8559-80ae872c00a2">
+
 
 ### LAB Part 4 : Querying Data Using AWS Athena
 ##
